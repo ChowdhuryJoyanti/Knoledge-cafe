@@ -1,5 +1,6 @@
 import React from 'react';
 import'./Header.css'
+import logo from'../../../public/user-2.png'
 
 const Header = () => {
     return (
@@ -16,7 +17,8 @@ const Header = () => {
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       </ul>
  
-       <img className='image' src="../../../public/user-2.png" alt="" />
+       {/* <img className='image' src="../../../public/user-2.png" alt="" /> */}
+       <img  className='image' src={logo} alt="" />
       
 
 
