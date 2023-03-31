@@ -1,5 +1,8 @@
 import React from 'react';
 import'./CoverImg.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 const CoverImg = (props) => {
     console.log(props.blog);
@@ -15,45 +18,55 @@ const CoverImg = (props) => {
  */}
 
 
+ 
 
-<div class="card">
-  <img src={coverImg} class="card-img-top" alt="..."/>
-  <div class="card-body">
+
+
+<div className="row container">
+ <div class="card  col-12 mt-5">
+   <img src={coverImg} class="card-img-top CoverImage img-fluid" alt="..."/>
+   <div class="card-body">
   {/* <img className="authorImage" src={img} class="card-img-top" alt="..."/> */}
- <div className='d-flex'>
- <div className='d-flex py-2'>
-  <img className="authorImage" src={img} alt="" />
-   <div className="m-3">
-   <h5>{authorName}</h5>
-    <p class="card-text">{publishDate}</p>
+  <div className='d-flex'>
+  <div className='d-flex py-2'>
+   <img className="authorImage" src={img} alt="" />
+
+    <div className="m-3">
+    <h5>{authorName}</h5>
+     <p class="card-text">{publishDate}</p>
+    </div>
+  
    </div>
-   <div className='justify-content-end'>
-   <p class="card-text">{readTime}</p>
+
+  </div>
+ 
+
+
+  <div className='d-flex justify-content-end flex-end'>
+    <p class="card-text px-3">{readTime}</p>
+    <p><FontAwesomeIcon icon={faBookmark} /> </p>
+    </div>
+    <h2 class="card-title">{blogTitle}</h2>
+   <div className='d-flex mt-4'>
+    <p className='px-3'> #beginners</p>
+    <p className=''>#programming</p>
    </div>
+   
+ </div>
+   <div class="card-body">
+    <a href="#" class="card-link">Mark as read</a>
+    
   </div>
  </div>
-    <h5 class="card-title">{blogTitle}</h5>
-   
+ </div> 
+
+
+
+
+
+
+
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
-
-
-
-
-
-
-
-        </div>
-
 
 
 
