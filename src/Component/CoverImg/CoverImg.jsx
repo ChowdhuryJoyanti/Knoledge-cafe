@@ -5,8 +5,12 @@ import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 
 const CoverImg = (props) => {
-    console.log(props.blog);
+    // console.log(props);
+    // console.log(props.blog);
     const {authorName,blogTitle,coverImg,img,readTime,publishDate} = props.blog
+
+    const handleBookmark = props.handleBookmark;
+
     return (
         <div>
             {/* <img className='img-fluid  mt-5 CoverImage' src={coverImg} alt="" />
@@ -44,7 +48,7 @@ const CoverImg = (props) => {
 
   <div className='d-flex justify-content-end flex-end'>
     <p class="card-text px-3">{readTime}</p>
-    <p><FontAwesomeIcon icon={faBookmark} /> </p>
+    <p onClick={()=>handleBookmark(props.blog)}><FontAwesomeIcon icon={faBookmark} /> </p>
     </div>
     <h2 class="card-title">{blogTitle}</h2>
    <div className='d-flex mt-4'>
@@ -59,11 +63,6 @@ const CoverImg = (props) => {
   </div>
  </div>
  </div> 
-
-
-
-
-
 
 
   </div>
