@@ -20,10 +20,19 @@ useEffect(()=>{
 },[])
 
 
-const handleBookmark = (blog) => {
-    // console.log(blog);
-    const newTitle = [...title,blog];
+const handleBookmark = (blog,blogTitle) => {
+    // (blog.blogTitle);
+
+    const newTitle = [...title,blog.blogTitle];
     setTitle(newTitle);
+
+
+    // if (title.find((a) => a.id === blog.id)) {
+    //     console.log("alert") 
+    //   } else {
+    //     const newArr = [...blogs, blog];
+    //     setTitle(newArr);
+    //   }
 
 }
 
@@ -61,7 +70,7 @@ const  handleTime = (blog) => {
                     </div>
                <div className="header-container">
                  {/* <BlogTitle blogTitle={title}></BlogTitle> */}
-              <Title title={title}></Title>
+                     <Title title={title}></Title>
                </div>
 
             </div>

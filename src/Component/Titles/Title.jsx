@@ -13,6 +13,9 @@ const Title = ({title}) => {
     return (
         <div>
             <h4>Bookmarked Blogs :{title.length} </h4>
+            {/* {
+                title.map((titles)=>{title.titles})
+            } */}
               {/* <h2>{blogTitle}</h2> */}
         </div>
     );

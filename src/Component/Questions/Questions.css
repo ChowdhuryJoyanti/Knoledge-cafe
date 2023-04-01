@@ -1,0 +1,24 @@
+
+.questions-bg{
+    background-color: rgba(132, 25, 151, 0.705);
+
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+.questions{
+    text-align: center;
+    color: gold;
+    margin: 5px;
+}
+.question{
+    color:rgb(185, 106, 10);
+    color:black;
+    
+
+}
+
+.answer{
+    color:rgb(58, 5, 5);
+
+}
