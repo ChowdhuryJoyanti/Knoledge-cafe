@@ -1,7 +1,7 @@
 import React from 'react';
 import'./CoverImg.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 
 const CoverImg = (props) => {
@@ -50,7 +50,7 @@ const CoverImg = (props) => {
 
 
   <div className='d-flex justify-content-end flex-end'>
-    <p class="card-text px-3">{readTime}</p>
+    <p class="card-text px-3">{readTime} min read</p>
     <p onClick={()=>handleBookmark(props.blog)}><FontAwesomeIcon icon={faBookmark} /> </p>
     </div>
     <h2 class="card-title">{blogTitle}</h2>
@@ -61,7 +61,8 @@ const CoverImg = (props) => {
    
  </div>
    <div class="card-body">
-    <a onClick={()=>handleTime(props.blog)} href="#" class="card-link">Mark as read</a>
+    <p onClick={()=>handleTime(props.blog)} className='text-primary'>Mark as read</p>
+    {/* <a onClick={()=>handleTime(props.blog)} href="#" class="card-link">Mark as read</a> */}
     
   </div>
  </div>

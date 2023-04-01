@@ -10,8 +10,8 @@ const Time = ({readTime}) => {
         totalReadTime = totalReadTime + blog.readTime;
     }
     return (
-        <div>
-               <h4>Spent time on read :{totalReadTime}min</h4>
+        <div className='time'>
+               <h5>Spent time on read :{totalReadTime}min</h5>
                {/* <h4>set times:{readTime.length}</h4> */}
         </div>
     );
