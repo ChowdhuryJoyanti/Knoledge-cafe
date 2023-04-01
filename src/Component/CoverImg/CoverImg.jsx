@@ -10,6 +10,9 @@ const CoverImg = (props) => {
     const {authorName,blogTitle,coverImg,img,readTime,publishDate} = props.blog
 
     const handleBookmark = props.handleBookmark;
+    const handleTime = props.handleTime;
+
+    
 
     return (
         <div>
@@ -58,7 +61,7 @@ const CoverImg = (props) => {
    
  </div>
    <div class="card-body">
-    <a href="#" class="card-link">Mark as read</a>
+    <a onClick={()=>handleTime(props.blog)} href="#" class="card-link">Mark as read</a>
     
   </div>
  </div>

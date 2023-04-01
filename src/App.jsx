@@ -15,7 +15,7 @@ import Blog from './Component/Blog/Blog';
 
 function App() {
   const [count, setCount] = useState(0)
-console.log(fakeData);
+// console.log(fakeData);
   return (
     <div className="App">
    
